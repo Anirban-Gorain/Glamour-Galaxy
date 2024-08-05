@@ -1,6 +1,6 @@
 const app = require("./index");
 const connectDB = require("./config/DB");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log("Server has started at port number", PORT);
