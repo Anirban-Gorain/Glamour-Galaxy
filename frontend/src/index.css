@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Product carousel section */
+
+.react-multi-carousel-list ul li {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.react-multiple-carousel__arrow {
+  background-color: black;
+}
