@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getCookieValue } from "./cookies";
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://glamour-galaxy.onrender.com";
 
 // Here is a problem, as soon as the app is getting loaded this file is getting executed. If the user is doing a manual login using email and password after successful log in the JWT token is arriving from the server but the axios instance was create with undefined JWT token.
 
