@@ -10,11 +10,13 @@ import TrackOrder from "../pages/TrackOrder/TrackOrder";
 import Cart from "../pages/Cart/Cart";
 import { OrderDetails } from "../pages/OrderDetails/OrderDetails";
 import { ProtectedRoute } from "../components/ProtectedRoute/ProtectedRoute";
+import UserDirection from "../components/UserDirection/UserDirection";
 
 export default function CustomerRoutes() {
   return (
     <>
       <Navigation />
+      <UserDirection />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/product/:productID" element={<ProductDetails />}></Route>
